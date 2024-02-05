@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["ExpoAttestModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.attest.ExpoAttestModule"]
+  }
+}
