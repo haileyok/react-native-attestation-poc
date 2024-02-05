@@ -1,7 +1,7 @@
 # iOS
 
 On iOS we have a few options. Here, we will simply validate that the device is
-valid. This is probably enough for our use case, but we can do more if we want.
+valid. This is probably enough for most use cases, but we can do more if we want.
 
 There are two bits (booleans) that we can update. They are device specific and
 tied to the Apple Developer Team ID, not the app itself. However for our purposes
