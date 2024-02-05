@@ -15,13 +15,13 @@ public class ExpoAttestModule: Module {
 
       DCDevice.current.generateToken { token, error in
         // Error if the token couldn't be geenerated
-        guard error == nil else {
+        guard error == nil, let tokenStr = token?.base64EncodedString() else {
           promise.reject("TOKEN_ERROR", "Error generating token.")
           return
         }
 
         // Return the generated token
-        promise.resolve(token!)
+        promise.resolve(tokenStr)
       }
     }
   }
