@@ -16,3 +16,5 @@ allow a registration.
 - User attempts to register again (say after five minutes). We use the device
 token to query the two bits data, and see that the last updated timestamp is
 too recent, so we deny the registration.
+
+Example: https://streamable.com/dtd9gp
